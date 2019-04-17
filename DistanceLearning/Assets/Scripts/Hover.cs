@@ -16,7 +16,6 @@ public class Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
         titles = GetComponent<TextMesh>().text;
         print(titles);  //working only for 1st title (?) 
             //or is it because all of the titles are enabled at once that it's not printing? ----->>>>> Not likely
-
         mesh = GetComponent<TextMesh>();
     }
 
@@ -39,7 +38,7 @@ public class Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, I
     void OnHoverEnter()
     {
         mesh.color = Color.cyan;
-        print("ENTER");
+        print("ENTERED");
     }
 
     void OnHoverExit()
